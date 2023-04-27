@@ -45,7 +45,7 @@ class Player(arcade.Sprite):
         self.speed = 0
 
         # Graphics to use for Player
-        kwargs['filename'] = "c:/Users/Otto/Desktop/python/Arcadepython/Racing/Assets/Cars/f1.png"
+        kwargs['filename'] = "Assets/Cars/f1.png"
 
         # How much to scale the graphics
         kwargs['scale'] = SPRITE_SCALING
@@ -85,7 +85,7 @@ class Skidmark(arcade.Sprite):
         """
 
         # Graphics to use
-        kwargs['filename'] = "c:/Users/Otto/Desktop/python/Arcadepython/Racing/Assets/Skidmarks/skidmark_short_1.png"
+        kwargs['filename'] = "Assets/Skidmarks/skidmark_short_1.png"
 
         # How much to scale the graphics
         kwargs['scale'] = SPRITE_SCALING
@@ -190,7 +190,7 @@ class MyGame(arcade.Window):
         self.skidmark_spritelist = arcade.SpriteList()
 
         # Tilemap
-        map_name = "c:/Users/Otto/Desktop/python/Arcadepython/Racing/Tilemaps/sand.tmx"
+        map_name = "Tilemaps/sand.tmx"
 
         layer_options = {
             "Dirt": {"use_spatial_hash": True},
